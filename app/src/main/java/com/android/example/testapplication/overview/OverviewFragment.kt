@@ -82,9 +82,9 @@ class OverviewFragment : Fragment() {
                 true
             }
             R.id.action_log_out -> {
-
-                findNavController().navigate(R.id.action_overviewFragment_to_mainFragment)
                 AuthUI.getInstance().signOut(requireContext())
+                findNavController().navigate(R.id.action_overviewFragment_to_mainFragment)
+
                 true
             }
             else ->
